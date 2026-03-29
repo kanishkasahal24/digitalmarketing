@@ -1,0 +1,455 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(0, 7, 5);
+    border-radius: 5px;
+    border: 10px solid rgb(186, 243, 81);
+}
+
+.left{
+    font-size: 30px;
+    color: white;
+}
+
+.right ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    color: white;
+}
+
+.right ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+.list{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.btn{
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid rgb(186, 243, 81);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px;
+    gap: 40px; 
+}
+
+.hero-left {
+    max-width: 60%;   
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: black;
+    font-family: Arial;
+    margin-bottom: 15px;
+}
+
+.intro{
+    padding: 0;
+}
+
+.intro h4{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(52, 52, 52);
+    font-family: system-ui;
+    margin-bottom: 20px;
+}
+
+.new {
+    background-color: black;
+    color: white;
+    padding: 12px 25px;   
+    border-radius: 20px;
+    font-size: 16px;
+    margin-top: 12px;
+    display: inline-block;
+    border: 2px solid rgb(186, 243, 81);
+
+}
+
+.hero-right img {
+    width: 100%;           
+    max-width: 450px;     
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px;
+    gap: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.body-left {
+    max-width: 100%;   
+}
+.body h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: black;
+    font-family: Arial;
+    margin-bottom: 15px;
+}
+.body p{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(52, 52, 52);
+    font-family: system-ui;
+    margin-bottom: 20px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 25px;
+    padding: 40px 80px;
+}
+   
+
+.box {
+    width: 23%;
+    padding: 25px;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+    
+}
+
+.box h3 {
+    font-size: 20px;
+    color: #f8f8f8;       
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.box p {
+    font-size: 14px;
+    color: #f8f5f5;
+    line-height: 1.5;
+}
+
+
+.box {
+    background: #070707;
+    color: white;
+    border: 5px solid rgb(186, 243, 81);
+}
+
+.box h3 p{
+    color: white;
+}
+
+.faqs {
+    padding: 80px 100px;
+}
+
+.faq-data {
+    display: flex;
+    gap: 80px;
+}
+
+.faq-left {
+    width: 40%;
+}
+
+.faq-left h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: black;
+    font-family: Arial;
+}
+
+.faq-left p {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(52, 52, 52);
+    font-family: system-ui;
+    margin-bottom: 20px;
+}
+
+.faq-btn {
+   background-color: black;
+    color: white;
+    padding: 12px 25px;   
+    border-radius: 20px;
+    font-size: 16px;
+    margin-top: 12px;
+    display: inline-block;
+    border: 2px solid rgb(186, 243, 81); 
+}
+
+
+.faq-right {
+    width: 60%;
+}
+
+.questions {
+    border-top: 1px solid #ccc;
+    padding: 22px 0;
+}
+
+/*.questions:last-child {
+    border-bottom: 1px solid #ccc;
+}*/
+
+.questions h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-family: system-ui;
+}
+
+.questions p {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(52, 52, 52);
+    line-height: 1.6;
+    max-width: 100%;
+    font-family: system-ui;
+}
+
+.new-img {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+}
+
+
+/* DARK MODE */
+
+.dark-mode{
+    background-color: #0f0f0f;
+    color: white;
+}
+
+/* headings */
+
+.dark-mode h1,
+.dark-mode h3{
+    color: white;
+}
+
+/* paragraphs */
+
+.dark-mode p,
+.dark-mode h4{
+    color: #d0d0d0;
+}
+
+/* navbar */
+
+.dark-mode .nav{
+    background-color: #111;
+}
+
+/* feature cards */
+
+.dark-mode .box{
+    background-color: #111;
+}
+
+/* FAQ section */
+
+.dark-mode .questions h3{
+    color: white;
+}
+
+.dark-mode .questions p{
+    color: #ccc;
+}
+
+.dark-mode .btn{
+    background-color: #111;
+    color: white;
+}
+
+.dark-mode .faq-btn{
+    background-color: #111;
+    color: white;
+}
+
+.dark-mode .new{
+    background-color: #111;
+    color: white;
+}
+
+
+/* LOGIN PAGE */
+
+.login-page{
+font-family: Arial, sans-serif;
+background:#f2f2f2;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+height:100vh;
+margin:0;
+}
+
+/* LOGIN BOX */
+
+.login-page .form-container{
+
+width:380px;
+
+padding:40px;
+
+background:white;
+
+border:4px solid rgb(186,243,81);
+
+border-radius:15px;
+
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+
+}
+
+/* TITLE */
+
+.login-page h2{
+text-align:center;
+margin-bottom:25px;
+}
+
+/* INPUT GROUP */
+
+.login-page .input-group{
+margin-bottom:20px;
+}
+
+.login-page label{
+font-weight:bold;
+display:block;
+margin-bottom:6px;
+}
+
+.login-page input{
+width:100%;
+padding:12px;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+.login-page input:focus{
+outline:none;
+border:2px solid rgb(186,243,81);
+}
+
+/* BUTTON */
+
+.login-page .btn{
+
+width:100%;
+
+padding:12px;
+
+background:black;
+
+color:white;
+
+border:none;
+
+border-radius:25px;
+
+font-size:16px;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+.login-page .btn:hover{
+background:white;
+color:rgb(186,243,81);
+border:2px solid rgb(186,243,81);
+}
+
+.login-page p{
+text-align:center;
+margin-top:15px;
+}
+
+.login-page a{
+color:green;
+font-weight:bold;
+text-decoration:none;
+}
+
+/* SIGNUP PAGE */
+
+.signup-page{
+font-family: Arial;
+background:#ffffff;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.signup-page .container{
+background:white;
+padding:40px;
+width:350px;
+border-radius:10px;
+border:4px solid rgb(186,243,81);
+}
+
+.signup-page h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+.signup-page input{
+width:100%;
+padding:10px;
+margin:8px 0;
+}
+
+.signup-page button{
+width:100%;
+padding:10px;
+background:black;
+color:white;
+border:2px solid rgb(186,243,81);
+border-radius:20px;
+cursor:pointer;
+}
+
+.signup-page .error{
+color:red;
+font-size:12px;
+}
+
