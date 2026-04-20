@@ -1,9 +1,5 @@
 <?php
 session_start();
-if(!isset($_SESSION['user_id'])){
-    header("Location: login.html");
-    exit();
-}
 ?>
 
 <!DOCTYPE html>
@@ -375,17 +371,17 @@ body.dark-mode img {
     <div class="team-grid">
         <div class="member">
             <img src="team1.jpg" alt="Team Member">
-            <h3>Jane Doe</h3>
+            <h3>Smita Sarangi</h3>
             <p>CEO & Founder</p>
         </div>
         <div class="member">
             <img src="team2.jpg" alt="Team Member">
-            <h3>John Smith</h3>
+            <h3>kanishka sahal</h3>
             <p>Head of Marketing</p>
         </div>
         <div class="member">
             <img src="team3.jpg" alt="Team Member">
-            <h3>Mary Johnson</h3>
+            <h3>purva renge</h3>
             <p>SEO Specialist</p>
         </div>
     </div>
@@ -417,7 +413,7 @@ body.dark-mode img {
 <!-- CTA -->
 <section class="cta fade-in">
     <h2>Ready to Grow Your Business?</h2>
-    <button class="btn new">Get Started</button>
+    <a href="companies.php"><button class="btn">Get started</button></a>
 </section>
 
 <footer>

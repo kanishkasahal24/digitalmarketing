@@ -52,29 +52,26 @@ e.preventDefault();
 });
 }
 
-// Dark/Light mode toggle
+// Dark / Light mode toggle
+
 const toggleBtn = document.getElementById("theme-toggle");
 
-toggleBtn.addEventListener("click", function() {
-    document.body.classList.toggle("dark-mode");
-    
-    // Toggle icon
-    if(document.body.classList.contains("dark-mode")){
-        toggleBtn.textContent = "☀️"; // sun icon for light mode
+toggleBtn.addEventListener("click", function () {
+
+    document.documentElement.classList.toggle("dark-mode");
+
+    if(document.documentElement.classList.contains("dark-mode")){
+        toggleBtn.textContent = "☀️";
+        localStorage.setItem("theme","dark");
     } else {
-        toggleBtn.textContent = "🌙"; // moon icon for dark mode
+        toggleBtn.textContent = "🌙";
+        localStorage.setItem("theme","light");
     }
 
-    // Optional: save preference in localStorage
-    if(document.body.classList.contains("dark-mode")){
-        localStorage.setItem("theme", "dark");
-    } else {
-        localStorage.setItem("theme", "light");
-    }
 });
 
-// Check saved preference on page load
 if(localStorage.getItem("theme") === "dark"){
-    document.body.classList.add("dark-mode");
+    document.documentElement.classList.add("dark-mode");
     toggleBtn.textContent = "☀️";
 }
+

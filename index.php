@@ -1,9 +1,5 @@
 <?php
 session_start();
-if(!isset($_SESSION['user_id'])){
-    header("Location: login.html");
-    exit();
-}
 ?>
 
 <!DOCTYPE html>
@@ -27,6 +23,7 @@ if(!isset($_SESSION['user_id'])){
          <img src="logo.png" alt="Logo">
          <span class="company-name">
         <span class="grow">GROW</span><span class="mint">MINT</span>
+</span>
     </div>
 
     <div class="right">
@@ -39,10 +36,37 @@ if(!isset($_SESSION['user_id'])){
     </div>
 
     <div class="auth-buttons">
-    <a href="login.html"><button class="btn">LOGIN</button></a>
-    <a href="signup.html"><button class="btn">SIGN UP</button></a>
-    <button id="theme-toggle" class="btn">🌙</button>
+
+        <div style="display:flex; align-items:center; gap:15px;">
+
+    <?php if(isset($_SESSION['name'])): ?>
+    <span style="color:white; font-weight:500;">
+        Hello <?php echo htmlspecialchars($_SESSION['name']); ?>👋
+    </span>
+<?php endif; ?>
+
+    
+
 </div>
+
+        <?php if(isset($_SESSION['user_id'])): ?>
+
+    <a href="profile.php">
+        <button class="btn">PROFILE</button>
+    </a>
+
+    <a href="logout.php">
+        <button class="btn">LOGOUT</button>
+    </a>
+
+<?php else: ?>
+            <!-- SHOW LOGIN/SIGNUP ONLY -->
+            <a href="login.html"><button class="btn">LOGIN</button></a>
+            <a href="signup.html"><button class="btn">SIGN UP</button></a>
+        <?php endif; ?>
+
+        <button id="theme-toggle" class="btn">🌙</button>
+    </div>
 </nav>
 
 <!-- HERO -->
@@ -118,7 +142,6 @@ if(!isset($_SESSION['user_id'])){
             <h1>FAQs</h1>
             <p>Common questions answered.</p>
 
-            <!-- ✅ ADDED IMAGE HERE -->
             <img src="image5.jpg" alt="Marketing visual" class="faq-image">
         </div>
 

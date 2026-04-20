@@ -304,7 +304,7 @@
 <!-- CTA -->
 <section class="cta">
     <h2>Ready to Grow Your Business?</h2>
-    <a href="companies.php"><button class="btn">Contact Us</button></a>
+    <a href="contact.php"><button class="btn">Contact Us</button></a>
 </section>
 
 <footer>
